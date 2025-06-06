@@ -1,0 +1,43 @@
+.fondoprisma{
+    background-image: url(images/libreriaPrisma.png);
+    padding: 2rem 1rem;
+}
+.contemporaneas{
+    background-color:bisque ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.superacion{
+    background-color:bisque ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.noFiccion{
+    background-color:bisque ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.ficcPopular{
+    background-color:bisque ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    
+}.clasicUniversales{
+    background-color:bisque ;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.noFiccion h2{
+    color: rgb(126, 34, 1);                                                                  
+}
+
+
+
+
+
+
