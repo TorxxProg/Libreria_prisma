@@ -1,40 +1,177 @@
-.fondoprisma{
+/* ======= ESTILOS GENERALES ======= */
+
+body {
+    background-color: rgba(236, 173, 56, 0.342);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 2rem;
+  }
+  
+  /* ======= ENCABEZADOS ======= */
+  
+  h1 {
+    color: rgb(203, 123, 18);
+  }
+  
+  h2 {
+    color: #8a471a; /* Tono cálido y visible */
+    margin-bottom: 1rem;
+  }
+  
+  /* ======= FONDO ESPECÍFICO DE INDEX ======= */
+  .fondoprisma {
     background-image: url(images/libreriaPrisma.png);
-    padding: 2rem 1rem;
-}
-.contemporaneas{
-    background-color:bisque ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  /* ======= LINKS ======= */
+  
+  a {
+    color: rgb(251, 235, 188);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ======= BOTONES ======= */
+  
+  .boton {
+    display: inline-block;
+    background-color: #8a471a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .boton:hover {
+    background-color: #703611;
+  }
+  
+  /* ======= TABLAS ======= */
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgb(251, 235, 188);
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #8a471a;
+    padding: 12px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-}
-.superacion{
-    background-color:bisque ;
+  }
+  
+  table th {
+    background-color: #8a471a;
+    color: #fff;
+  }
+  
+  /* ======= FORMULARIOS ======= */
+  
+  form {
+    margin-top: 2rem;
+    background-color: rgb(251, 235, 188);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #8a471a;
+    border-radius: 4px;
+  }
+  
+  form button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #8a471a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #703611;
+  }
+  
+  /* ======= SECCIONES DE CATEGORÍAS ======= */
+  
+  .contemporaneas,
+  .superacion,
+  .noFiccion,
+  .ficcPopular,
+  .clasicUniversales {
+    background-color: bisque;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
-}
-.noFiccion{
-    background-color:bisque ;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-}
-.ficcPopular{
-    background-color:bisque ;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-    
-}.clasicUniversales{
-    background-color:bisque ;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
-}
-.noFiccion h2{
-    color: rgb(126, 34, 1);                                                                  
-}
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  /* Color específico para h2 en noFiccion */
+  .noFiccion h2 {
+    color: rgb(126, 34, 1);
+  }
+  
+  /* ======= FOOTER ======= */
+  
+  .finalDePag {
+    margin-top: 3rem;
+    color: aliceblue;
+  }
+  
+  /* ======= RESPONSIVE ======= */
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+      font-size: 18px;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    .boton {
+      width: 100%;
+    }
+  }
+  
+  
 
 
 

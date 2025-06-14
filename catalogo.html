@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-       body{
-        background-color:rgba(236, 173, 56, 0.342);
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 25px;
-       } 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Destacado</title>
+  
+  <style>
+    /* Fondo principal */
+    body {
+      background-color: rgba(236, 173, 56, 0.342);
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      padding: 2rem;
+    }
 
-    </style>
-    <title>Catàlogo destacado</title>
+    /* Títulos principales y de categorías */
+    h2 {
+      color: #8a471a;
+      margin-top: 1.5rem;
+    }
+
+    /* Enlaces a subcatálogos */
+    a {
+      display: inline-block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: rgb(251, 235, 188);
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #f5e0a3;
+    }
+
+    /* Lista de categorías */
+    article ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    article ol h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+        padding: 1rem;
+      }
+
+      a {
+        width: 80%;
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h2>Catálogo Destacado</h2>
-    <article>
-        <ol>
-            <h2>No ficción</h2><a href="NoFicc.html">Revisar catálogo</a>
-            <h2>Superación personal</h2><a href="SupPers.html">Revisar catálogo</a>
-            <h2>Novelas contemporáneas</h2><a href="NovContemp.html">Revisar catálogo</a>
-            <h2>Ficción Popular</h2><a href="FiccPopu.html">Revisar catálogo</a>
-            <h2>Clásicos Universales</h2><a href="ClasicUniver.html">Revisar catálogo</a>
-        </ol>
-    </article>
-</section>
-</main>
+  <h2>Catálogo Destacado</h2>
+  <article>
+    <ol>
+      <h2>No Ficción</h2>
+      <a href="NoFicc.html">Revisar catálogo</a>
+
+      <h2>Superación Personal</h2>
+      <a href="SupPers.html">Revisar catálogo</a>
+
+      <h2>Novelas Contemporáneas</h2>
+      <a href="NovContemp.html">Revisar catálogo</a>
+
+      <h2>Ficción Popular</h2>
+      <a href="FiccPopu.html">Revisar catálogo</a>
+
+      <h2>Clásicos Universales</h2>
+      <a href="ClasicUniver.html">Revisar catálogo</a>
+    </ol>
+  </article>
 </body>
-    
+</html>
+  

@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Librería Prisma</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: medium ;
-            text-align: left;
-        }
-    </style></head>
+  <meta charset="UTF-8" />
+  <title>Librería Prisma</title>
+  <!-- Vincula tu archivo de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: medium;
+      text-align: left;
+    }
+
+    nav a {
+      color: rgb(251, 235, 188);
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    section h2 {
+      color: #8a471a; /* Color oficial para títulos de secciones */
+    }
+
+    .boton-section {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: rgb(251, 235, 188);
+      color: #333;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .boton-section:hover {
+      background-color: #f5e0a3;
+    }
+  </style>
+</head>
 
 <body class="fondoprisma">
+  <header>
+    <h1 style="color: rgb(251, 235, 188);">Librería Prisma</h1>
+    <h2 style="color: aliceblue;">
+      Bienvenido a la Librería Prisma, una librería moderna
+      y con método de suscripción para todos los amantes de la lectura...
+    </h2>
+    <br /><br /><br /><br />
+    <nav>
+      <a href="#home">Inicio</a>
+      <a href="#suscripciones">Planes de Suscripción</a>
+      <a href="#catalogo">Catálogo</a>
+    </nav>
+  </header>
 
-    <header>
-        <h1 style="color: rgb(251, 235, 188);">Librería Prisma</h1>
-        <p>
-            <h2 style="color: aliceblue;">Bienvenido a la Librería Prisma, una librería moderna 
-                y con método de suscripción para todos los amantes de la lectura....</h2>
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <nav>
-            <h2>
-                <style>
-                    a {
-                        color:rgb(251, 235, 188);
-                    }
-                </style>
-                <a href="#home">Inicio</a>
-                <a href="#suscripciones">Planes de Suscripción</a>
-                <a href="#catalogo">Catálogo</a>
-            </h2>   
-        </nav>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="catalogo"></section>
-    <a href="catalogo.html"><h2>Catálogo Destacado</h2></a>
+  <br /><br /><br /><br />
 
-    <section id="suscripciones/"></section>
-    <a href="suscripciones.html"><h2>Planes de suscripción</h2></a>
+  <section id="catalogo">
+    <h2>Catálogo Destacado</h2>
+    <a href="catalogo.html" class="boton-section">Ver Catálogo</a>
+  </section>
 
+  <br /><br />
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer style="color: aliceblue;" class="finalDePag">
+  <section id="suscripciones">
+    <h2>Planes de suscripción</h2>
+    <a href="suscripciones.html" class="boton-section">Ver Planes</a>
+  </section>
 
-        <p>&copy; 2025 Librería Prisma. Todos los derechos reservados.</p>
-    </footer>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+  <footer style="color: aliceblue;" class="finalDePag">
+    <p>&copy; 2025 Librería Prisma. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
-
-
-
