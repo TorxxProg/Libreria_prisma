@@ -1,57 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novelas contemporaneas</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Novelas Contemporáneas</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    a {
+      color: rgba(211, 112, 25, 0.8);
+    }
+    .contemporaneas img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .contemporaneas {
+      padding: 2rem 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="contemporaneas">
-        <h1>Novelas contemporaneas más vendidas</h1>
-        <article>
-            <h2>1) En agosto nos vemos</h2>
-            <img src="images/enagostonosvemos.png" width="300px" height="300px" alt="En agosto nos vemos">
-            <p><h3>Gabriel García Márquez</h3></p>
 
-            <h2>2) Los vagabundos de dios</h2>
-            <img src="images/losvagabundosdedios.png" width="300px" height="300px" alt="Los vagabundos de dios">
-            <p><h3>Mario Mendoza</h3></p>
+  <!-- Navbar Bootstrap personalizado -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Librería Prisma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <h2>3) El libro de bill</h2>
-            <img src="images/ellibrodebill.png" width="300px" height="300px" alt="El libro de bill">
-            <p><h3>Alex Hirsch</h3></p>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="suscripciones.html">Planes de Suscripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <h2>4) Cien años de soledad</h2>
-            <img src="images/cienaños.png" width="300px" height="300px" alt="Cien años de soledad">
-            <p><h3>Gabriel García Márquez</h3></p>
+  <!-- Contenido principal Novelas Contemporáneas -->
+  <div class="container contemporaneas">
+    <h1 class="mb-4">Novelas contemporáneas más vendidas</h1>
+    <article class="row g-4">
 
-            <h2>5) La vegetariana</h2>
-            <img src="images/lavegetariana.png" width="300px" height="300px" alt="La vegetariana">
-            <p><h3>Han Kang</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">1) En agosto nos vemos</a></h2>
+        <img src="images/enagostonosvemos.png" alt="En agosto nos vemos">
+        <h3>Gabriel García Márquez</h3>
+      </div>
 
-            <h2>6) Romper el círculo</h2>
-            <img src="images/romperelcirculo.png" width="300px" height="300px" alt="Romper el círculo">
-            <p><h3>Colleen Hoover</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">2) Los vagabundos de dios</a></h2>
+        <img src="images/losvagabundosdedios.png" alt="Los vagabundos de dios">
+        <h3>Mario Mendoza</h3>
+      </div>
 
-            <h2>7) La paciente silenciosa</h2>
-            <img src="images/lapacientesilenciosa.png" width="300px" height="300px" alt="La paciente silenciosa">
-            <p><h3>Alex Michaelides</h3></p>
-            
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">3) El libro de Bill</a></h2>
+        <img src="images/ellibrodebill.png" alt="El libro de Bill">
+        <h3>Alex Hirsch</h3>
+      </div>
 
-            <h2>8) El principito</h2>
-            <img src="images/elprincipito.png" width="300px" height="300px" alt="El principito">
-            <p><h3>Antoine de saint-Exupéry</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">4) Cien años de soledad</a></h2>
+        <img src="images/cienaños.png" alt="Cien años de soledad">
+        <h3>Gabriel García Márquez</h3>
+      </div>
 
-            <h2>9)La clase de griego</h2>
-            <img src="images/laclasedegriego.png" width="300px" height="300px" alt="La clase de griego">
-            <p><h3>Han Kang</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">5) La vegetariana</a></h2>
+        <img src="images/lavegetariana.png" alt="La vegetariana">
+        <h3>Han Kang</h3>
+      </div>
 
-            <h2>10) El viento conoce mi nombre</h2>
-            <img src="images/elvientoconoceminombre.png" width="300px" height="300px" alt="El viento conoce mi nombre">
-            <p><h3>Isabel Allende</h3></p>
-            </div>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">6) Romper el círculo</a></h2>
+        <img src="images/romperelcirculo.png" alt="Romper el círculo">
+        <h3>Colleen Hoover</h3>
+      </div>
 
-    
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">7) La paciente silenciosa</a></h2>
+        <img src="images/lapacientesilenciosa.png" alt="La paciente silenciosa">
+        <h3>Alex Michaelides</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">8) El principito</a></h2>
+        <img src="images/elprincipito.png" alt="El principito">
+        <h3>Antoine de Saint-Exupéry</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">9) La clase de griego</a></h2>
+        <img src="images/laclasedegriego.png" alt="La clase de griego">
+        <h3>Han Kang</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">10) El viento conoce mi nombre</a></h2>
+        <img src="images/elvientoconoceminombre.png" alt="El viento conoce mi nombre">
+        <h3>Isabel Allende</h3>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -1,56 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No ficción</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Ficción</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    a {
+      color: rgba(211, 112, 25, 0.8);
+    }
+
+    .noFiccion img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .noFiccion {
+      padding: 2rem 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="noFiccion">
-        <h1>Libros más vendidos de no ficción</h1>
-        <article>
-            <h2>1) Habitos atòmicos</h2>
-            <img src="images/Atomichanits.png" width="300px" height="300px" alt="Habitos atómicos">
-            <p><h3>James Clear</h3></p>
 
-            <h2>2) Cómo hacer que te pasen cosas buenas</h2>
-            <img src="images/cosasbuenas.png" width="300px" height="300px" alt="Cosas buenas">
-            <p><h3>Marian Rojas Estapé</h3></p>
+  <!-- Navbar Bootstrap personalizado -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Librería Prisma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <h2>3) Recupera tú mente, reconquista tú vida</h2>
-            <img src="images/Recuperamente.png" width="300px" height="300px" alt="Recupera tú mente">
-            <p><h3>Marian Rojas Estapé</h3></p>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="suscripciones.html">Planes de Suscripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <h2>4) Nexus</h2>
-            <img src="images/nexus.png" width="300px" height="300px" alt="Nexus">
-            <p><h3>Yuval Noah Harari</h3></p>
+  <!-- Contenido principal No Ficción -->
+  <div class="container noFiccion">
+    <h1 class="mb-4">Libros más vendidos de no ficción</h1>
+    <article class="row g-4">
 
-            <h2>5) El poder del ahora</h2>
-            <img src="images/elpoder.png" width="300px" height="300px" alt="El poder del ahora">
-            <p><h3>Eckhart Tolle</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">1) Hábitos atómicos</a></h2>
+        <img src="images/Atomichanits.png" alt="Hábitos atómicos">
+        <h3>James Clear</h3>
+      </div>
 
-            <h2>6) Encuentra tu persona vitamína</h2>
-            <img src="images/personavitamina.png" width="300px" height="300px" alt="Encuentra tú persona vitamína">
-            <p><h3>Marian Rojas Estapé</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">2) Cómo hacer que te pasen cosas buenas</a></h2>
+        <img src="images/cosasbuenas.png" alt="Cosas buenas">
+        <h3>Marian Rojas Estapé</h3>
+      </div>
 
-            <h2>7) La psicología del dinero</h2>
-            <img src="images/psicologiadinero.png" width="300px" height="300px" alt="La psicología del dinero">
-            <p><h3>Morgan Housel</h3></p>
-            
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">3) Recupera tu mente, reconquista tu vida</a></h2>
+        <img src="images/Recuperamente.png" alt="Recupera tu mente">
+        <h3>Marian Rojas Estapé</h3>
+      </div>
 
-            <h2>8) Este dolor no es mío</h2>
-            <img src="images/estedolornoesmio.png" width="300px" height="300px" alt="Este dolor no es mío">
-            <p><h3>Mark Wolynn</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">4) Nexus</a></h2>
+        <img src="images/nexus.png" alt="Nexus">
+        <h3>Yuval Noah Harari</h3>
+      </div>
 
-            <h2>9) La riqueza que el dinero no puede comprar</h2>
-            <img src="images/lariqueza.png" width="300px" height="300px" alt="La riqueza que el dinero no puede comprar">
-            <p><h3>Robin Sharma</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">5) El poder del ahora</a></h2>
+        <img src="images/elpoder.png" alt="El poder del ahora">
+        <h3>Eckhart Tolle</h3>
+      </div>
 
-            <h2>10) Deja de ser tú</h2>
-            <img src="images/dejadesertu.png" width="300px" height="300px" alt="Deja de ser tú">
-            <p><h3>Joe Dispenza</h3></p>
-            </div>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">6) Encuentra tu persona vitamina</a></h2>
+        <img src="images/personavitamina.png" alt="Encuentra tu persona vitamina">
+        <h3>Marian Rojas Estapé</h3>
+      </div>
 
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">7) La psicología del dinero</a></h2>
+        <img src="images/psicologiadinero.png" alt="La psicología del dinero">
+        <h3>Morgan Housel</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">8) Este dolor no es mío</a></h2>
+        <img src="images/estedolornoesmio.png" alt="Este dolor no es mío">
+        <h3>Mark Wolynn</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">9) La riqueza que el dinero no puede comprar</a></h2>
+        <img src="images/lariqueza.png" alt="La riqueza que el dinero no puede comprar">
+        <h3>Robin Sharma</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">10) Deja de ser tú</a></h2>
+        <img src="images/dejadesertu.png" alt="Deja de ser tú">
+        <h3>Joe Dispenza</h3>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+

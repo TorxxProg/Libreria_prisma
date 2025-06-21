@@ -5,139 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Planes de Suscripción</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     body {
-      background-color: rgba(236, 173, 56, 0.342);
-      text-align: center;
+      background: 
+        linear-gradient(rgba(236, 173, 56, 0.3), rgba(236, 173, 56, 0.3)),
+        url(images/libreriaPrisma.png);
+      background-size: cover;
+      background-position: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 20px;
       padding: 2rem;
-    }
-
-    table {
-      margin: 0 auto;
-      border-collapse: collapse;
-      width: 90%;
-      max-width: 800px;
-      background-color: rgb(251, 235, 188);
-    }
-
-    th, td {
-      border: 1px solid #8a471a;
-      padding: 12px;
       text-align: center;
-    }
-
-    th {
-      background-color: #8a471a;
-      color: #fff;
     }
 
     h2 {
-      color: #8a471a;
+      color: #472309; /* café oscuro más legible */
       margin-top: 2rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* sombra suave */
     }
 
-    form {
-      margin-top: 2rem;
-      background-color: rgb(251, 235, 188);
-      padding: 20px;
-      border-radius: 8px;
-      display: inline-block;
-      text-align: left;
+    /* Colores personalizados para la tabla Bootstrap */
+    table.table {
+      background-color: rgb(251, 235, 188); /* fondo de la tabla */
     }
 
-    label {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #8a471a;
-      border-radius: 4px;
-    }
-
-    button {
-      display: block;
-      margin: 20px auto 0 auto;
-      padding: 10px 20px;
-      background-color: #8a471a;
+    table.table th {
+      background-color: #8a471a; /* encabezados */
       color: #fff;
+    }
+
+    table.table th,
+    table.table td {
+      border: 1px solid #8a471a; /* bordes */
+    }
+
+    button.btn {
+      background-color: #8a471a;
       border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
     }
 
-    button:hover {
+    button.btn:hover {
       background-color: #703611;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        font-size: 18px;
-        padding: 1rem;
-      }
-
-      table {
-        width: 100%;
-      }
     }
   </style>
 </head>
 
 <body>
-  <main>
-    <h2>Planes de Suscripción</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Plan</th>
-          <th>Precio mensual</th>
-          <th>Libros disponibles</th>
-          <th>Ventajas</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Básico</td>
-          <td>$15.000</td>
-          <td>3 libros al mes</td>
-          <td>Acceso a clásicos y novedades seleccionadas</td>
-        </tr>
-        <tr>
-          <td>Estándar</td>
-          <td>$25.000</td>
-          <td>5 libros al mes</td>
-          <td>Acceso completo a todo el catálogo</td>
-        </tr>
-        <tr>
-          <td>Premium</td>
-          <td>$35.000</td>
-          <td>Libros ilimitados</td>
-          <td>Acceso a eventos, descuentos y libros exclusivos</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="container">
+    <main>
+      <h2>Planes de Suscripción</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Precio mensual</th>
+              <th>Libros disponibles</th>
+              <th>Ventajas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>$15.000</td>
+              <td>3 libros al mes</td>
+              <td>Acceso a clásicos y novedades seleccionadas</td>
+            </tr>
+            <tr>
+              <td>Estándar</td>
+              <td>$25.000</td>
+              <td>5 libros al mes</td>
+              <td>Acceso completo a todo el catálogo</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>$35.000</td>
+              <td>Libros ilimitados</td>
+              <td>Acceso a eventos, descuentos y libros exclusivos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h2>Suscribirme</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required />
+      <h2>Suscribirme</h2>
+      <form class="bg-light p-4 rounded mx-auto" style="max-width: 500px;">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" id="email" name="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="plan" class="form-label">Plan:</label>
+          <select id="plan" name="plan" class="form-select" required>
+            <option value="">Selecciona un plan</option>
+            <option value="Básico">Básico</option>
+            <option value="Estándar">Estándar</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+        <button type="submit" class="btn text-white">Enviar</button>
+      </form>
+    </main>
+  </div>
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="plan">Plan:</label>
-      <textarea id="plan" name="plan" rows="2" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
+  <!-- Bootstrap Bundle JS (opcional para interacciones JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

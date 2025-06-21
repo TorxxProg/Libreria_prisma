@@ -1,56 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficción popular</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficción Popular</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu hoja de estilos personalizada -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    a {
+      color: rgba(211, 112, 25, 0.8);
+    }
+    /* Asegura que las imágenes sean responsive */
+    .ficcPopular img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .ficcPopular {
+      padding: 2rem 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="ficcPopular">
-        <h1>Libros más vendidos de ficción popular</h1>
-        <article>
-            <h2>1) El alquimista</h2>
-            <img src="images/elalquimista.png" width="300px" height="300px" alt="El alquimista">
-            <p><h3>Paulo Coelho</h3></p>
 
-            <h2>2) Los juegos del hambre</h2>
-            <img src="images/losjuegosdelhambre.png" width="300px" height="300px" alt="Los juegos del hambre">
-            <p><h3>Suzanne Collins</h3></p>
+  <!-- Navbar Bootstrap personalizado -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Librería Prisma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <h2>3) Harry Potter y la piedra filosofal</h2>
-            <img src="images/harrypotter.png" width="300px" height="300px" alt="Harry Potter y la piedra filosofal">
-            <p><h3>J.K Rowling</h3></p>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="suscripciones.html">Planes de Suscripción</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <h2>4) La chica del tren</h2>
-            <img src="images/lachicadeltren.png" width="300px" height="300px" alt="La chica del tren">
-            <p><h3>Paula Hawkins</h3></p>
+  <!-- Contenido principal Ficción Popular -->
+  <div class="container ficcPopular">
+    <h1 class="mb-4">Ficción Popular más leída</h1>
+    <article class="row g-4">
 
-            <h2>5) El niño con el pijama de rayas</h2>
-            <img src="images/el niñoconelpijama.png" width="300px" height="300px" alt="El niño con el pijama de rayas">
-            <p><h3>John Boyne</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">1) El alquimista</a></h2>
+        <img src="images/elalquimista.png" alt="El alquimista">
+        <h3>Paulo Coelho</h3>
+      </div>
 
-            <h2>6) El señor de los anillos</h2>
-            <img src="images/elseñordelosaniñls.png" width="300px" height="300px" alt="El señor de los anillos">
-            <p><h3>J.R.R Tolkien</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">2) Cien años de soledad</a></h2>
+        <img src="images/cienaños.png" alt="Cien años de soledad">
+        <h3>Gabriel García Márquez</h3>
+      </div>
 
-            <h2>7) El marciano</h2>
-            <img src="images/elmarciano.png" width="300px" height="300px" alt="El marciano">
-            <p><h3>Andy Weir</h3></p>
-            
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">3) El principito</a></h2>
+        <img src="images/elprincipito.png" alt="El principito">
+        <h3>Antoine de Saint-Exupéry</h3>
+      </div>
 
-            <h2>8) El código Da Vinci</h2>
-            <img src="images/elcodigodavinci.png" width="300px" height="300px" alt="El código Da Vinci">
-            <p><h3>Dan Brown</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">4) El nombre del viento</a></h2>
+        <img src="images/elnombredelviento.png" alt="El nombre del viento">
+        <h3>Patrick Rothfuss</h3>
+      </div>
 
-            <h2>9) Cazadores de sombras</h2>
-            <img src="images/cazadoresdesombras.png" width="300px" height="300px" alt="Cazadores de sombras">
-            <p><h3>Cassandra Clare</h3></p>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">5) Los juegos del hambre</a></h2>
+        <img src="images/losjuegosdelhambre.png" alt="Los juegos del hambre">
+        <h3>Suzanne Collins</h3>
+      </div>
 
-            <h2>10) La sombra del viento</h2>
-            <img src="images/lasombradelviento.png" width="300px" height="300px" alt="La sombra del viento">
-            <p><h3>Carlos Ruíz Zafón</h3></p>
-            </div>
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">6) Divergente</a></h2>
+        <img src="images/divergente.png" alt="Divergente">
+        <h3>Veronica Roth</h3>
+      </div>
 
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">7) Crepúsculo</a></h2>
+        <img src="images/crepusculo.png" alt="Crepúsculo">
+        <h3>Stephenie Meyer</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">8) Harry Potter y la piedra filosofal</a></h2>
+        <img src="images/harrypotter.png" alt="Harry Potter y la piedra filosofal">
+        <h3>J.K. Rowling</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">9) El código Da Vinci</a></h2>
+        <img src="images/elcodigodavinci.png" alt="El código Da Vinci">
+        <h3>Dan Brown</h3>
+      </div>
+
+      <div class="col-md-4">
+        <h2><a href="suscripciones.html">10) El psicoanalista</a></h2>
+        <img src="images/elpsicoanalista.png" alt="El psicoanalista">
+        <h3>John Katzenbach</h3>
+      </div>
+
+    </article>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

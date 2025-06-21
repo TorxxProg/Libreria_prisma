@@ -4,24 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catálogo Destacado</title>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
-    /* Fondo principal */
     body {
-      background-color: rgba(236, 173, 56, 0.342);
+      background-color: rgba(199, 117, 16, 0.982);
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 20px;
       padding: 2rem;
     }
 
-    /* Títulos principales y de categorías */
+    .custom-navbar {
+      background-color: #703611;
+      padding: 0.5rem 2rem;
+    }
+
+    .custom-navbar .nav-link {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    .custom-navbar .nav-link:hover {
+      color: #f0ad4e;
+    }
+
+    .carousel-item img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background-color: rgba(112, 54, 17, 0.7);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+      color: #fff;
+    }
+
     h2 {
       color: #8a471a;
       margin-top: 1.5rem;
     }
 
-    /* Enlaces a subcatálogos */
     a {
       display: inline-block;
       margin: 10px auto;
@@ -38,7 +67,6 @@
       background-color: #f5e0a3;
     }
 
-    /* Lista de categorías */
     article ol {
       list-style: none;
       padding: 0;
@@ -48,7 +76,6 @@
       margin-bottom: 0.5rem;
     }
 
-    /* Responsive para móviles */
     @media (max-width: 600px) {
       body {
         font-size: 18px;
@@ -59,30 +86,113 @@
         width: 80%;
         font-size: 18px;
       }
+
+      .carousel-item img {
+        max-height: 200px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <!-- ✅ Navbar con anclas internas -->
+  <nav class="navbar navbar-expand-lg custom-navbar mb-4">
+    <div class="container-fluid justify-content-end">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#no-ficcion">No Ficción</a>
+        <a class="nav-link" href="#superacion">Superación Personal</a>
+        <a class="nav-link" href="#novelas">Novelas Contemporáneas</a>
+        <a class="nav-link" href="#ficcion">Ficción Popular</a>
+        <a class="nav-link" href="#clasicos">Clásicos Universales</a>
+      </div>
+    </div>
+  </nav>
+
   <h2>Catálogo Destacado</h2>
+
+  <!-- ✅ Carrusel con 5 slides -->
+  <div id="carouselExampleCaptions" class="carousel slide mb-4">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Atomichanits.png" class="img-fluid d-block mx-auto" alt="Habitos atómicos">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>No Ficción</h5>
+          <p>Explora la realidad con nuestros títulos destacados.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/mentemillonaria.png" class="img-fluid d-block mx-auto" alt="Mente millonaria">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Superación Personal</h5>
+          <p>Libros que te motivan a ser mejor cada día.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/enagostonosvemos.png" class="img-fluid d-block mx-auto" alt="En agosto nos vemos">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Novelas Contemporáneas</h5>
+          <p>Historias actuales para todos los gustos.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/elalquimista.png" class="img-fluid d-block mx-auto" alt="El alquimista">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ficción Popular</h5>
+          <p>Tramas emocionantes que atrapan de principio a fin.</p>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <img src="images/cienaños.png" class="img-fluid d-block mx-auto" alt="Cien años de soledad">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Clásicos Universales</h5>
+          <p>Obras inmortales que siguen inspirando generaciones.</p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
   <article>
     <ol>
-      <h2>No Ficción</h2>
-      <a href="NoFicc.html">Revisar catálogo</a>
+      <h2 id="no-ficcion">No Ficción</h2>
+      <a href="NoFicc.html">Ir a sección</a>
 
-      <h2>Superación Personal</h2>
-      <a href="SupPers.html">Revisar catálogo</a>
+      <h2 id="superacion">Superación Personal</h2>
+      <a href="SupPers.html">Ir a sección</a>
 
-      <h2>Novelas Contemporáneas</h2>
-      <a href="NovContemp.html">Revisar catálogo</a>
+      <h2 id="novelas">Novelas Contemporáneas</h2>
+      <a href="NovContemp.html">Ir a sección</a>
 
-      <h2>Ficción Popular</h2>
-      <a href="FiccPopu.html">Revisar catálogo</a>
+      <h2 id="ficcion">Ficción Popular</h2>
+      <a href="FiccPopu.html">Ir a sección</a>
 
-      <h2>Clásicos Universales</h2>
-      <a href="ClasicUniver.html">Revisar catálogo</a>
+      <h2 id="clasicos">Clásicos Universales</h2>
+      <a href="ClasicUniver.html">Ir a sección</a>
     </ol>
   </article>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-  
+
